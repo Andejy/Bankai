@@ -1,0 +1,96 @@
+      /* barber animated svg  */
+#Rhant {
+    animation: mano-derecha 1.7s linear infinite;
+  }
+  #Lhant {
+    animation: mano-derecha 1.7s linear infinite;
+  }
+  #Rcut {
+    animation: mano-derecha 1.7s linear infinite;
+  }
+  #Lcut {
+    animation: izquierda 1.7s linear infinite;
+  }
+  
+  #movil {
+    animation: movil 1.5s linear infinite;
+  }
+  #peine {
+      animation: peine 1.7s linear infinite;
+  }
+  #Lbraso {
+    animation: brazo 1.7s linear infinite;
+  }
+
+  
+
+
+
+
+
+@keyframes card-animation {
+  0% {
+    transform: translateX(-10000px);
+  }
+  50% {
+    transform: translateX(108px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+@keyframes mano-derecha {
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes izquierda {
+    50% {
+      transform: translateY(-3px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes movil {
+    0% {
+      opacity: 0;
+      transform: translate(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0);
+    }
+  }
+  @keyframes peine {
+      50% {
+  transform: translate(12px,10px);
+          }
+      100% {
+  transform: translate(0);
+          }
+      
+    }
+    @keyframes brazo {
+        50% {            
+            transform: translate(0, 10px);
+        }       
+        100% {
+            transform: translate(0);
+        }
+
+    }

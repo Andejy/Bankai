@@ -1,0 +1,462 @@
+:root {
+  --ichigo: #fd841f;
+  --ichigo-light: #ffa64d;
+  --ichigo-dark: #d66b00;
+  --shinigami-blue: ##0877ff;
+  --shinigami-blue-light: #3a9bff;
+  --shinigami-blue-dark: #0052cc;
+  --rukia-bankai: ##f3f3f3;
+  --rukia: ##030100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--rukia-bankai);
+  scroll-behavior: smooth;
+}
+/* header Menu and nav */
+
+
+.header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid var(--ichigo);
+}
+.navbar{
+  display: none;
+}
+.logo-img {
+  height: 100px;
+  width: 200px;
+  margin-left: -50px;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-child {
+  list-style: none;
+  margin: 1.6rem 2rem 0 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.6s;
+  position: relative;
+}
+
+.menu-child a {
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--rukia);
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+.menu-child a:hover {
+  color: var(--ichigo);
+}
+/* Banner an svg animated */
+.banner {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+.banner-svg {
+  display: block;
+}
+
+.banner-text {
+  padding: 2rem;
+}
+
+.banner-title {
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+  color: var(--ichigo);
+}
+.banner-title span {
+  margin-right: 15px;
+  color: black;
+}
+.banner-description {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--rukia);
+}
+.shade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shade svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 0.081rem);
+  height: 5.938rem;
+}
+
+.shade .shape-fill {
+  fill: var(--ichigo);
+}
+/* Cards zone */
+#sobre-nosotros {
+  margin-top: 7.188rem;
+  background: var(--ichigo);
+  text-align: center;
+}
+.sobre-nosotrs-container {
+  display: flex;
+  background: var(--ichigo);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sobre-nosostro-title {
+  padding: 5rem 0 3rem 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.sobre-nosostro-title::first-letter{
+  color: #fff;
+  font-size: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  padding-top: 0;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 17rem;
+  margin: 20px;
+  transition: 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow:  10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-card-container {
+  margin: 0 0 1.6rem 0;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  cursor: pointer;
+}
+.img-card-container:hover .img-text{
+  clip-path: circle(150% at top left);
+}
+.img-card {
+  height: 270px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.img-text{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #fd831f65;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  clip-path: circle(0% at top left);
+  transition: 1s;
+}
+
+.tex-card-container {
+  text-align: left;
+}
+.tex-card-container h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--rukia);
+  transition: 0.5s;
+}
+.tex-card-container h3:hover {
+  color: var(--ichigo);
+}
+.description-card {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--shinigami-blue-dark);
+}
+.price span {
+  font-weight: bold;
+  color: var(--ichigo);
+}
+.main-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.contact-form> input{
+  width: 100%;
+  height: 2.5rem;
+  margin: 1rem;
+  padding:1rem;
+  border: none;
+  border-radius: 1rem;
+  color: var(--ichigo-dark);
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.contact-form> input::placeholder{
+  color: var(--ichigo-dark);
+
+}
+.text-area{
+  width: 100%;
+  height: 10rem;
+  margin: 1rem;
+  padding:1rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  color:var(--ichigo-dark);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.text-area::placeholder{
+  color:var(--ichigo-dark);
+}
+
+
+
+
+
+.form-text{
+color: #fff;
+}
+
+.contact-conteiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: var(--ichigo);
+  padding: 2rem;
+  border-radius: 15px;
+  height: fit-content;
+  color: #fff;
+  width: 50%;
+  width: fit-content;
+}
+
+.input-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  border: none; 
+  height: 4rem;
+  transition: all 0.5s;
+  width: 30rem;
+  border-radius: 15px;
+}
+.input-btn:hover{
+  transform: scale(.9);
+  color: var(--ichigo);
+  cursor: pointer;
+}
+footer {
+  background-color: var(--ichigo);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+footer p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+footer > a {
+ margin: 3rem 0.5rem;
+ font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .header{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+
+#sobre-nosotros{
+  margin-top: -.1rem;
+}
+
+
+  .sobre-nosotrs-container {
+    flex-direction: column;
+  }
+  .sobre-nosostro-title{
+    padding: 5rem 0 3rem 0;
+    font-size: 2rem;
+  }
+.banner{
+    flex-direction:column-reverse ;
+  }
+.banner-title{
+    font-size: 2rem;
+  }
+  .banner-description{
+    font-size: 1.2rem;
+  }
+
+.shade {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shade svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 0.081rem);
+  height: 2.938rem;
+}
+
+.shade .shape-fill {
+  fill: var(--ichigo);
+}
+  
+  .img-text{
+    font-size: 1.5rem;
+  }
+  .tex-card-container h3{
+    font-size: 1.2rem;
+  }
+  .description-card{
+    font-size: 1rem;
+  }
+  .price{
+    font-size: 1rem;
+  }
+
+
+  .contact-conteiner{
+    width: 100%;
+  }
+  .input-btn{
+    width: 100%;
+  }
+  .contact-form> input{
+    width: 100%;
+  }
+
+  .text-area{
+    width: 100%;
+  }
+
+  .form-text{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+ 
+
+  
+

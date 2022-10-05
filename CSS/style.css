@@ -465,6 +465,13 @@ display: flex;
   }
 .banner{
     flex-direction:column-reverse ;
+
+  }
+  .banner-svg{
+    width: 21.25rem;
+    height: 21.25rem;
+
+
   }
 .banner-title{
     font-size: 2rem;
@@ -524,6 +531,10 @@ display: flex;
 
   .form-text{
     font-size: 1.5rem;
+  }
+  .Modal{
+  width: 50vh;
+ 
   }
 
 .modal-container{

@@ -41,6 +41,7 @@ body {
 }
 .menu-container {
   display: flex;
+  min-width: 700px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -154,6 +155,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   width: 17rem;
+  min-width: 17rem;
   margin: 20px;
   transition: 1s;
 }
@@ -330,8 +332,79 @@ footer > a {
  font-size: 1.2rem;
 }
 
+.Modal{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+ display: flex; 
+  justify-content: center;
+  align-items: center;
+  transition: all .6;
+}
+.modal-container{
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  height: 23rem;
+  overflow: auto;
+}
 
+.modal-header{
+  color: var(--ichigo);
+  display: flex;
+  flex-direction: row-reverse ;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  
+  font-weight: 700;
+}
+.modal-close{
+  font-size: 1.5rem;
+  width: 40px;
+  border: none;
+  height: 40px;
+display: block;
+border-radius: 50%;
+  color: #d66b00;
+  background-color: #ffffff;
+  transition: all.5s;
+}
 
+.modal-close:hover{
+  background-color: var(--ichigo);
+color: #fff;
+}
+
+.modal-body{
+margin-top: 4rem;
+}
+.modal-body>h3{
+  color: var(--ichigo);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.modal-body>p{
+  font-size: 1.2rem;
+}
+
+.modal-active{
+display: flex;
+}
+.modalClosed{
+  display: none;
+}
 
 
 
@@ -452,8 +525,15 @@ footer > a {
   .form-text{
     font-size: 1.5rem;
   }
+
+.modal-container{
+width: 90vw;
+
+
+ 
 }
 
+}
 
 
  
